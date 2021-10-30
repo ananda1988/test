@@ -1,0 +1,12 @@
+import sqlite3
+conn=sqlite3.connect("walldorf.db")
+cur=conn.cursor()
+#cur.execute('CREATE TABLE user(id INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT,password TEXT,adress TEXT,tel TEXT);')
+#cur.execute("DROP TABLE user")
+#cur.execute('CREATE TABLE receiver(id INTEGER PRIMARY KEY AUTOINCREMENT,email TEXT,password TEXT,adress TEXT,tel TEXT);')
+cur.execute("SELECT * FROM user")
+records=cur.fetchall()
+print(records)
+conn.commit()
+conn.close()
+print("Table Created")

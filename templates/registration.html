@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+                body{
+            background-image:url(../static/photo-1555505019-8c3f1c4aba5f.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/lend">Lend</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/registration">registration</a></li>
+                <li><a href="">Why?</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="/receiver">receiver</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{message}}
+    <form action="/registration" method="post">
+        <h1>
+            Registration Form
+        </h1>
+        <input type="email" name="email" id="" placeholder="email"><br><br>
+        <input type="password" name="password" id="" placeholder="password"><br><br>
+        <input type="password" name="confirm_password" id="" placeholder="password_confirm"><br><br>
+        <input type="adress" name="adress" id="" placeholder="adress"><br><br>
+        <input type="tel" name="tel" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="tel"><br><br>
+        <input type="submit" value="submit"><br><br>
+        <a href="/login">Already have an Acount? click here</a>
+    </form>
+        
+    
+</body>
+</html>
